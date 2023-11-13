@@ -1,0 +1,74 @@
+.search {
+    
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 1px 11px 0px rgb(0 0 0 / 20%);
+}
+
+.default{
+    background-color: white;
+}
+
+.nocturnal{
+    background-color: --var(--nocturnalGray);
+    color:white !important;
+}
+
+input[type="text"] {
+    outline: none;
+    border: none;
+    background-color:transparent;
+}
+
+.nocturnal input[type="text"]{
+    color:white;
+}
+
+#searching{
+    width:460px;
+}
+
+.filters {
+    padding: 2vw 3vw;
+}
+
+
+/* FILTER */
+.filtro{
+
+        width: max-content;
+        padding: 10px;
+        display: flex;
+        gap: 10px;
+        border-radius: 6px;
+        box-shadow: 0px 1px 11px 0px rgb(0 0 0 / 20%);
+    
+}
+
+#root > div > div.principal.nocturnalContent > div.filters > div.filtro.nocturnal > select{
+    color:white !important;
+    background-color: #2B3743 !important;
+}
+
+.filtro select{
+    outline:none;
+    border:none;
+    background-color: transparent;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px){
+    .filtro select {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+    }
+}

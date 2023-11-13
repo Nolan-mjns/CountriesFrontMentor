@@ -1,0 +1,62 @@
+.countryCard {
+    width: 22vw;
+        box-shadow: 0px 1px 11px 0px rgb(0 0 0 / 20%);
+        border-radius: 0.5vw;
+        height: auto;
+        /*animation:scale-up-center 0.4s forwards;*/
+}
+
+.countryCard:hover {
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    cursor: pointer;
+}
+
+.default{
+    background-color: white;
+}
+
+.nocturnal{
+    background-color: --var(--nocturnalWhite)
+}
+
+.featInfo{
+    padding: 0 2vw 1vw;
+}
+
+.sections{
+    font-weight:500;
+}
+
+img.fotos {
+    width: -webkit-fill-available;
+    height: 14vw;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    border-bottom: 1px solid #CFCFD2;
+}
+
+/*Tool: https://xsgames.co/animatiss/*/
+@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+
+/*Tool: Animista */
+ @-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  

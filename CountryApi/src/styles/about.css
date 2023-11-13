@@ -1,0 +1,213 @@
+/*.about{
+    width:100%;
+    height:100%;
+    background-color:black;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+}*/
+
+.about {
+    /* column-count: 2; */
+    height: 90.7vh;
+    display: flex;
+}
+
+.defaultContent{
+    background-color: var(--lightingGray);
+}
+
+.nocturnalContent{
+    background-color: var(--nocturnalGray);
+    color:white
+}
+
+
+
+img#goBack {
+    width: 1.5vw;
+}
+
+img#bigFlag {
+    width: 25vw;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
+}
+
+.banderaGrande {
+    display: grid;
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 3vw;
+    justify-content: center;
+}
+
+#detailedInfo {
+    column-count: 2;
+    margin-bottom: 3vw;
+}
+
+.infoPais {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+   
+}
+
+
+
+span.borders {
+    
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    box-shadow: 0px 1px 11px 0px rgb(0 0 0 / 10%);
+    cursor: pointer;
+ 
+}
+
+span.titleInfo {
+    font-weight: 700;
+}
+
+#borderCountry{
+   
+        margin-right: 10px;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2.9rem;
+    
+}
+
+.backback {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 1px 11px 0px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    width: max-content;
+    padding: 0vw 1vw 0vw 1vw;
+    border-radius: 0.5vw;
+    gap: 0.3vw;
+    vertical-align: middle;
+}
+
+#backback > p{
+    margin: 0.5vw;
+}
+
+.defaultContent{
+    background-color: var(--lightingGray);
+}
+
+.nocturnalContent{
+    background-color: var(--nocturnalGray);
+    color:white
+}
+
+.default{
+    background-color: white;
+}
+
+.nocturnal{
+    background-color: var(--nocturnalWhite);
+    color: white;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+    .about {
+        display: block;
+        padding-top: 30%;
+        height:100%;
+    }
+
+    .banderaGrande {
+        display: block;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+       /* padding-left: 20px;*/
+        text-align: center;
+       /* padding-right: 20px; */
+        gap: 3vw;
+        justify-content: center;
+    }
+
+    .backback {
+        display: flex;
+        box-shadow: 0px 1px 11px 0px rgb(0 0 0 / 10%);
+        cursor: pointer;
+        width: 100px;
+        padding: 0vw 1vw 0vw 1vw;
+        border-radius: 0.5vw;
+        gap: 0.3vw;
+        vertical-align: middle;
+        margin: 0px;
+    }
+
+    img#goBack {
+        width: 20px;
+    }
+
+    .banderaGrande {
+        display: block;
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        gap: 3vw;
+        justify-content: center;
+        text-align: left;
+    }
+
+    img#bigFlag {
+        width: 100%;
+        border-radius: 2vw;
+        box-shadow: 0px 0px 10px 10px rgb(0 0 0 / 10%);
+    }
+
+    .banderaGrande {
+        display: block;
+        width: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: left;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .backback {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .infoPais {
+
+        width: 100%;
+     
+    }
+
+    #detailedInfo {
+        column-count: 1;
+        margin-bottom: 3vw;
+    }
+
+    .infoPais {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .principal {
+        padding-top: 30%;
+    }
+
+    .backback {
+        justify-content: space-evenly;
+        border-radius:10px;
+    }
+}
