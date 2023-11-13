@@ -53,10 +53,16 @@ input[type="text"] {
     background-color: #2B3743 !important;
 }
 
-.filtro select{
-    outline:none;
-    border:none;
+.filtro select {
+    outline: white !important;
+    border: white 1px solid;
     background-color: transparent;
+    box-shadow: none;
+}
+
+.regions{
+    outline:none;
+    border: none;
 }
 
 .filters {

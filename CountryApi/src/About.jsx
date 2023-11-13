@@ -97,7 +97,7 @@ return String(number).replace(/(.)(?=(\d{3})+$)/g, '$1,');
     <div className={"about " + container}>
       {/* COLUMNA IZQUIERDA*/}
         <div className="banderaGrande">
-          <div class={"backback " + theme} onClick={goBack}>
+          <div className={"backback " + theme} onClick={goBack}>
 <img id="goBack" src={theme === "default" ? back : backWhite} />
 <p> back</p>
 </div>
@@ -133,7 +133,7 @@ return String(number).replace(/(.)(?=(\d{3})+$)/g, '$1,');
                 <div className="theBorders">
                 <p id="borderCountry"><span className="titleInfo" >Border Countries:</span>
                 {bordersC.map((country, index) => (
-    <span class={"borders " + theme} key={index} onClick={() => navigate(`/about/${country[0].name.common}`)}>{country[0].name.common}</span>
+    <span className={"borders " + theme} key={index} onClick={() => navigate(`/about/${country[0].name.common}`)}>{country[0].name.common}</span>
   ))}</p></div> : null}
                 
           </>
