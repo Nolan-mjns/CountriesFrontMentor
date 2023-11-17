@@ -7,7 +7,7 @@ const Country = ({countries, theme}) => {
   const navigate = useNavigate();
     //console.log(countries)
     const verMas = () => {
-      navigate(`/about/${countries.name.common}`);
+      navigate(`/about/${countries.cca2}`);
     };
 
     const formatter = (number) => {
@@ -23,7 +23,9 @@ const Country = ({countries, theme}) => {
        <h2>{countries.name.common && countries.name.common}</h2>
        <p><span className="sections">Population: </span>{formatter(countries.population)}</p>
        <p><span className="sections">Region: </span>{countries.region}</p>
-       <p><span className="sections">Capital: </span>{countries.capital && countries.capital[0]}</p>
+       {countries.capital ? 
+       <p><span className="sections">Capital: </span>{countries.capital && countries.capital[0]}</p> : null}
+       
        </div>
     </div>
   )
