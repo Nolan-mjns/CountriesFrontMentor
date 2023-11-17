@@ -17,7 +17,7 @@ const About = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    //console.log("CountryName ", countryName);
+    console.log("CountryName ", countryName);
     
 
     const countryPage = async () => {
@@ -120,7 +120,7 @@ return String(number).replace(/(.)(?=(\d{3})+$)/g, '$1,');
                <p> <span className="titleInfo">Population:</span> {formatter(dataCountry[0].population)}</p>
                <p> <span className="titleInfo">Region:</span> {dataCountry[0].region}</p>
                <p> <span className="titleInfo">Sub Region:</span> {dataCountry[0].subregion}</p>
-               <p> <span className="titleInfo">Capital:</span> {dataCountry[0].capital[0]}</p>
+               <p> <span className="titleInfo">Capital:</span> {dataCountry[0].capital ? dataCountry[0].capital[0] : "No capital"}</p>
                <p> <span className="titleInfo">Top Level Domain:</span> {dataCountry[0].tld[0]}</p>
                {Object.entries(dataCountry[0]?.currencies).map(([countryCode, nativeNameData]) => (
                <p> <span className="titleInfo">Currencies:</span> {nativeNameData.name}</p>
