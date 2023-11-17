@@ -23,7 +23,8 @@ const About = () => {
     const countryPage = async () => {
       try {
         
-        const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
+        //const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
+        const response = await fetch(`https://restcountries.com/v3.1/alpha//${countryName}`);
         const data = await response.json();
         //console.log("response ", response, " data ", data);
         setDataCountry(data);
@@ -110,7 +111,7 @@ return String(number).replace(/(.)(?=(\d{3})+$)/g, '$1,');
          <div className="infoPais">
          {dataCountry && dataCountry[0].flags.png ? 
          <>
-         <h2>{dataCountry[0]?.name?.common}</h2> 
+         <h2>{dataCountry[0]?.name.common}</h2> 
               <div id="detailedInfo">
                 {Object.entries(dataCountry[0]?.name?.nativeName).map(([countryCode, nativeNameData]) => (
                   <p key={countryCode}>
@@ -120,7 +121,8 @@ return String(number).replace(/(.)(?=(\d{3})+$)/g, '$1,');
                <p> <span className="titleInfo">Population:</span> {formatter(dataCountry[0].population)}</p>
                <p> <span className="titleInfo">Region:</span> {dataCountry[0].region}</p>
                <p> <span className="titleInfo">Sub Region:</span> {dataCountry[0].subregion}</p>
-               <p> <span className="titleInfo">Capital:</span> {dataCountry[0].capital ? dataCountry[0].capital[0] : "No capital"}</p>
+               {dataCountry[0].capital ?
+               <p> <span className="titleInfo">Capital:</span> {dataCountry[0].capital[0]}</p> : null}
                <p> <span className="titleInfo">Top Level Domain:</span> {dataCountry[0].tld[0]}</p>
                {Object.entries(dataCountry[0]?.currencies).map(([countryCode, nativeNameData]) => (
                <p> <span className="titleInfo">Currencies:</span> {nativeNameData.name}</p>
@@ -133,7 +135,7 @@ return String(number).replace(/(.)(?=(\d{3})+$)/g, '$1,');
                 <div className="theBorders">
                 <p id="borderCountry"><span className="titleInfo" >Border Countries:</span>
                 {bordersC.map((country, index) => (
-    <span className={"borders " + theme} key={index} onClick={() => navigate(`/about/${country[0].name.common}`)}>{country[0].name.common}</span>
+    <span className={"borders " + theme} key={index} onClick={() => navigate(`/about/${country[0].cca2}`)}>{country[0].name.common}</span>
   ))}</p></div> : null}
                 
           </>
