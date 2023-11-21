@@ -4,7 +4,7 @@ Hello everyone, I am Karumu and I'm a begginner at web developing. I'm very inte
 I used ReactJS, Vite, React-router
 
 # Screenshot
-![Homepage screenshot](CountryApi/frontmentorcountry.png)
+![Homepage screenshot](https://github.com/Karumuu/CountriesFrontMentor/blob/main/CountryApi/frontmentorcountry.png?raw=true)
 
 
 # CHALLENGE INFO:
