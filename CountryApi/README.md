@@ -1,11 +1,18 @@
 # Developer:
 Hello everyone, I am Karumu and I'm a begginner at web developing. I'm very interested on Front End Web Develop and I want to start practicing more and improve. I'm a junior but I have not much experience to be honest so I'll be practicing and learning more. I know this is not the most optimized code and sorry if I forgot something about the setup I feel totally new with this and that's why I wanna improve. Any advice or comment are very welcome, please be kind.
 
-I used ReactJS, Vite, React-router
+I used ReactJS, Vite, React-router-dom, API use
+
+# DEMO
+[Try it!](https://gleeful-halva-13992a.netlify.app)
 
 # Screenshot
 ![Homepage screenshot](https://github.com/Karumuu/CountriesFrontMentor/blob/main/CountryApi/frontmentorcountry.png?raw=true)
 
+# To fix:
+-Theme color change
+
+-----
 
 # CHALLENGE INFO:
 ## Frontend Mentor - REST Countries API with color theme switcher
